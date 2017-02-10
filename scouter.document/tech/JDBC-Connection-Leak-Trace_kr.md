@@ -4,7 +4,7 @@
 JDBC Connection을 추적의 목적은 대표적인 Connection 관련 문제를 감지하기 위한 것이다. 
 
 ## Connection Leak 
- Connection을 pool에 반환하지 않는 문제이다. Statement나 ResultSet을 close하지 않는 문제는 크게 문제 되지 않는다.(문제 될 경우도 있다.), JDBC드라이버가 어느정도 해결해 주고 있다.  하지만  Connection미반환 문제는 반드시 해결하는 문제이다.
+ Connection을 pool에 반환하지 않는 문제이다. Statement나 ResultSet을 close하지 않는 문제는 크게 문제 되지 않는다.(문제 될 경우도 있다.), JDBC드라이버가 어느정도 해결해 주고 있다.  하지만  Connection미반환 문제는 반드시 해결해야 하는 문제이다.
 
 ## getConnection Delay
 Connecttion Pool크기가 작아 부족한 경우 자주 발생하며  Connection을 새로 맺는 경우에도 발생한다.
